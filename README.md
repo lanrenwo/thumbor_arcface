@@ -5,6 +5,11 @@ Thumbor ArcFace can recognize side faces, higher recognition rate.
 - Thumbor >= 7.0.0
 - ArcFace >= 3.0
 
+# Installation
+```bash
+pip install thumbor_arcface
+```
+
 ## Enable detector
 1. Add `thumbor_arcface` to your `thumbor.conf`.
 
