@@ -8,6 +8,9 @@ install_requires = []
 if exists('requirements.txt'):
     install_requires = open('requirements.txt').read().strip().split('\n')
 
+with open("README.md", "r", encoding="utf-8") as fh:
+        long_description = fh.read()
+
 setup(
     name='thumbor_arcface',
     version=open('VERSION').read().strip(),
@@ -23,7 +26,8 @@ setup(
     license=open('LICENSE').read() if exists('LICENSE') else '',
     # Put a nice one-liner description here
     description='Enable thumbor to use ArcFace to run face detection',
-    long_description=open('README.rst').read() if exists("README.rst") else "",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     # Any requirements here, e.g. "Django >= 1.1.1"
     install_requires=install_requires,
     # Ensure we include files from the manifest
