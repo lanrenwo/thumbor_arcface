@@ -1,5 +1,5 @@
 # thumbor_arcface
-Thumbor ArcFace can recognize side faces, higher recognition rate.
+Thumbor ArcFace can recognize side faces, higher recognition rate, solve the problem of low recognition rate of OpenCV.
 
 [中文文档](README-osc.md)
 
