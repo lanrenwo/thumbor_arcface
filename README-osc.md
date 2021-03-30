@@ -1,5 +1,5 @@
 # thumbor_arcface
-Thumbor ArcFace可以识别侧面，识别率更高，解决OpenCV识别率不高的问题。
+Thumbor ArcFace可识别侧面，并且识别率更高，从而解决OpenCV识别率不高的问题。
 
 # 环境
 - Thumbor >= 7.0.0
