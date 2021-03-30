@@ -9,7 +9,7 @@ Thumbor ArcFace can recognize side faces, higher recognition rate.
 ```bash
 pip install thumbor_arcface
 ```
-## Enable detector
+# Enable detector
 - Add `thumbor_arcface` to your `thumbor.conf`.
 ```
 DETECTORS = [
@@ -23,7 +23,7 @@ DETECTORS = [
 ARC_APP_ID = ''
 ARC_SDK_KEY = ''
 ```
-## Thanks
+# Thanks
 - [ArcSoft SDK](https://ai.arcsoft.com.cn/)
 - [ArcFace-python](https://github.com/tensorflower/ArcFace-python)
 - [thumbor_rekognition](https://github.com/yu-liang-kono/thumbor_rekognition)
