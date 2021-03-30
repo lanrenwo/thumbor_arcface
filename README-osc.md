@@ -1,31 +1,29 @@
 # thumbor_arcface
-Thumbor ArcFace can recognize side faces, higher recognition rate.
+Thumbor ArcFace可以识别侧面，识别率更高。
 
-[中文文档](README-osc.md)
-
-# Environment
+# 环境
 - Thumbor >= 7.0.0
 - ArcFace SDK >= 3.0
 
-# Installation
+# 安装
 ```bash
 pip install thumbor_arcface
 ```
-# Enable detector
-- Add `thumbor_arcface` to your `thumbor.conf`.
+# 开启插件
+- 将 `thumbor_arcface` 添加至 `thumbor.conf`.
 ```
 DETECTORS = [
     'thumbor_arcface',
     'thumbor.detectors.feature_detector',
 ]
 ```
-- At the end of your `thumbor.conf`, add ArcFace's `ARC_APP_ID` and `ARC_SDK_KEY`, Remember to modify the value.
+- 在`thumbor.conf`的文件末尾, 添加以下配置，记住一定要修改值。
 ```
 ########### ArcFace #########
 ARC_APP_ID = ''
 ARC_SDK_KEY = ''
 ```
-# Thanks
+# 感谢
 - [ArcSoft SDK](https://ai.arcsoft.com.cn/)
 - [ArcFace-python](https://github.com/tensorflower/ArcFace-python)
 - [thumbor_rekognition](https://github.com/yu-liang-kono/thumbor_rekognition)
