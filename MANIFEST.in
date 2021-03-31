@@ -1,4 +1,3 @@
 prune .git
-include *.txt
-recursive-include docs *
+recursive-include thumbor_arcface *
 include VERSION
