@@ -23,7 +23,7 @@ setup(
     # REQUIRED: Your project's URL
     url='https://github.com/lanrenwo/thumbor_arcface',
     # Put your license here. See LICENSE.txt for more information
-    license=open('LICENSE').read() if exists('LICENSE') else '',
+    license="MIT",
     # Put a nice one-liner description here
     description='Enable thumbor to use ArcFace to run face detection',
     long_description=long_description,
