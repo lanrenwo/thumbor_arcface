@@ -24,6 +24,8 @@ DETECTORS = [
 ########### ArcFace #########
 ARC_APP_ID = ''
 ARC_SDK_KEY = ''
+ARC_FACE_SCALE = 32
+ARC_FACE_MAX_NUM = 10
 ```
 # Thanks
 - [ArcSoft SDK](https://ai.arcsoft.com.cn/)

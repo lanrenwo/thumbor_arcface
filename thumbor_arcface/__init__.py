@@ -20,6 +20,12 @@ Config.define(
 Config.define(
     'ARC_SDK_KEY', None,'ArcFace SDKKey'
 )
+Config.define(
+    'ARC_FACE_SCALE', 32,'ArcFace detectFaceScaleVal'
+)
+Config.define(
+    'ARC_FACE_MAX_NUM', 10, 'ArcFace detectFaceMaxNum'
+)
 
 class Detector(BaseDetector):
     def __init__(self, context, index, detectors):
@@ -43,7 +49,7 @@ class Detector(BaseDetector):
     def detect_faces(self):
         face_engine = ArcFace()
         mask = ASF_FACE_DETECT | ASF_FACERECOGNITION
-        res = face_engine.ASFInitEngine(ASF_DETECT_MODE_IMAGE, ASF_OP_0_ONLY, 30, 10, mask)
+        res = face_engine.ASFInitEngine(ASF_DETECT_MODE_IMAGE, ASF_OP_0_ONLY, self.context.config.ARC_FACE_SCALE, self.context.config.ARC_FACE_MAX_NUM, mask)
         if (res != MOK):
             logger.warning("ASFInitEngine fail: {}".format(res))
             return []
