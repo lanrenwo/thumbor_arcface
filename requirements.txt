@@ -1,1 +1,1 @@
-thumbor>=7.*
+thumbor>=7.0.0
