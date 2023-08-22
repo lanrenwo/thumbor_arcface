@@ -28,8 +28,16 @@ ARC_FACE_SCALE = 32
 ARC_FACE_MAX_NUM = 10
 ```
 # Debug
+- Edit thumbor.conf:
 ```
 STORAGE = "thumbor.storages.no_storage"
+```
+- if Engine fail (thumbor log):
+Because The validity period of the SDK has expired and you need to re-download the update .so file
+```
+2023-08-22 10:53:58 thumbor:WARNING ASFActivation sucess: 90114
+2023-08-22 10:53:58 thumbor:WARNING ASF_ActiveFileInfo(startTime=b'xxx',endTime=b'xxx',platform=b'linux',sdkType=b'ArcFace',appId=b'xxxx',sdkKey=b'xxxx',sdkVersion=b'3.0.12402010101.3',fileVersion=b'2.0')
+2023-08-22 10:53:58 thumbor:WARNING ASFInitEngine fail: 28678
 ```
 # Thanks
 - [ArcSoft SDK](https://ai.arcsoft.com.cn/)
