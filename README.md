@@ -27,6 +27,10 @@ ARC_SDK_KEY = ''
 ARC_FACE_SCALE = 32
 ARC_FACE_MAX_NUM = 10
 ```
+#Debug
+```
+STORAGE = "thumbor.storages.no_storage"
+```
 # Thanks
 - [ArcSoft SDK](https://ai.arcsoft.com.cn/)
 - [ArcFace-python](https://github.com/tensorflower/ArcFace-python)
