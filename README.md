@@ -32,7 +32,7 @@ ARC_FACE_MAX_NUM = 10
 ```
 STORAGE = "thumbor.storages.no_storage"
 ```
-- if Engine fail (thumbor log):
+- if Engine fail (thumbor log):   
 Because The validity period of the SDK has expired and you need to re-download the update .so file
 ```
 2023-08-22 10:53:58 thumbor:WARNING ASFActivation sucess: 90114
