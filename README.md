@@ -27,7 +27,7 @@ ARC_SDK_KEY = ''
 ARC_FACE_SCALE = 32
 ARC_FACE_MAX_NUM = 10
 ```
-#Debug
+# Debug
 ```
 STORAGE = "thumbor.storages.no_storage"
 ```
